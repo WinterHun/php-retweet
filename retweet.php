@@ -11,8 +11,10 @@ $settings = array(
     'consumer_secret' => ""
 );
 
+//search filer list
 $getfields = array( '#retweet+win+-filter:retweets&result_type=mixed',
-                    '#retweet+win+book+-filter:retweets&result_type=mixed',);
+                    '#retweet+win+book+-filter:retweets&result_type=mixed',
+                    '#retweet+win+t-shirt+-filter:retweets&result_type=mixed',);
 
 $url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
@@ -55,8 +57,6 @@ while (true) {
                     print "skip follow\n";
                 }
             }
-
-            $save = json_encode($ids);
 
             print "------------------------------------------------------------------------------------------------\n\n";
             sleep (60);
