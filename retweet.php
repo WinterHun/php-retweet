@@ -11,7 +11,7 @@ $settings = array(
     'consumer_secret' => ""
 );
 
-//search filer list
+//search filter list
 $getfields = array( '#retweet+win+-filter:retweets&result_type=mixed',
                     '#retweet+win+book+-filter:retweets&result_type=mixed',
                     '#retweet+win+t-shirt+-filter:retweets&result_type=mixed',);
